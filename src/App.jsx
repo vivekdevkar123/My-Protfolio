@@ -1,5 +1,6 @@
 import "./app.scss";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./components/about/About";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 
@@ -12,9 +13,11 @@ const App = () => {
     </section>
 
     <section id="About">
-      <Parallax type="About Us" />
+      <Parallax type="About Me" />
     </section>
-    <section>About</section>
+    <section>
+      <About />
+    </section>
     <section id="Skills">
       <Parallax type="Skills" />
     </section>
