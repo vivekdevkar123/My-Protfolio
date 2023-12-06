@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Hero.scss";
 import { motion } from "framer-motion";
-
+import { TypeAnimation } from 'react-type-animation';
 
 const textVariants = {
     initial: {
@@ -47,11 +47,29 @@ export default function Hero() {
         <div className='hero'>
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
-                    <motion.h2 variants={textVariants}>VIVEK DEVKAR</motion.h2>
-                    <motion.h1 variants={textVariants}>Full-Stack web Developer</motion.h1>
+                    <motion.h1 variants={textVariants}>VIVEK DEVKAR</motion.h1>
+                    <motion.h2 variants={textVariants}>
+                        Proficient in
+                        <TypeAnimation
+                            sequence={[
+                                // Same substring at the start will only be typed once, initially
+                                ' Python',
+                                1000,
+                                ' Django',
+                                1000,
+                                ' React',
+                                1000,
+                                ' Docker',
+                                1000,
+                            ]}
+                            speed={50}
+                            style={{ color: 'orange' }}
+                            repeat={Infinity}
+                        />
+                    </motion.h2>
                     <motion.div className="buttons" variants={textVariants}>
                         <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                        <motion.button variants={textVariants}> <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vivekdevkar123">Let's Connect</a> </motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
                 </motion.div>
