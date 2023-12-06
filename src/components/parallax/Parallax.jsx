@@ -3,25 +3,22 @@ import "./Parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Parallax({ type }) {
-    // const ref = useRef();
+    const ref = useRef();
 
-    // const { scrollProgress } = useScroll({
-    //     target: ref.current, // Use ref.current to get the DOM element
-    //     offset: ["start start", "end start"]
-    // });
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"]
+    });
 
-    // Debugging: Check if scrollProgress is defined
-    // console.log("scrollProgress:", scrollProgress);
-
-    // const Ytext = useTransform(scrollProgress, [0, 1], ["0%", "500%"]);
-    // const Ybg = useTransform(scrollProgress, [0, 1], ["0%", "100%"]);
+    const Ytext = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
+    const Ybg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
     return (
-        <div className='parallax'>
-            <motion.h1>{type}</motion.h1>
+        <div className='parallax' ref={ref}>
+            <motion.h1 style={{ y: Ytext }}>{type}</motion.h1>
             <motion.div className="mountains"></motion.div>
-            <motion.div className="planets"></motion.div>
-            <motion.div className="stars"></motion.div>
+            <motion.div style={{ y: Ybg }} className="planets"></motion.div>
+            <motion.div style={{ x: Ytext }} className="stars"></motion.div>
         </div>
     );
 }
