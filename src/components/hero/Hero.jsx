@@ -57,12 +57,13 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
-                Python Django React Javascript
-            </motion.div>
             <div className="imageContainer">
                 <img src="/hero.png" alt="" />
             </div>
+
+            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
+                Python Django React Javascript
+            </motion.div>
         </div>
     )
 }

@@ -51,6 +51,18 @@
         position: absolute;
         top: 0;
         right: 0;
+        border: none;
+        display: flex;
+        margin-right: 15vw;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            border-radius: 50%;
+            box-shadow: -5px 33px 124px 14px rgba(148, 193, 247, 0.64),
+                0px 45px 26px 0px rgba(0, 0, 0, 0.14);
+            // width: ;
+        }
     }
 
     .slidingTextContainer {

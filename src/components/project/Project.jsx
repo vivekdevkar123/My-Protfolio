@@ -5,27 +5,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "React Commerce",
-        img: "https://source.unsplash.com/random/?Cryptocurrency&1",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cupiditate iste nesciunt repellendus unde incidunt error, vitae similique porro officiis voluptatum quae architecto illo laboriosam! Totam repellat quibusdam voluptate assumenda?",
+        title: "CodeCollab",
+        img: "/code-collabe.jpg",
+        desc: "CodeCollab is a real-time collaborative code editor that allows multiple users to code together simultaneously. It's a web-based platform where developers can create and join coding rooms, write, edit, and execute code in various programming languages, and see real-time updates from their collaborators. CodeCollab is designed to streamline remote pair programming, facilitate coding interviews, and enhance collaborative coding experiences.",
     },
     {
         id: 2,
-        title: "Next js Commerce",
-        img: "https://source.unsplash.com/random/?mobile&1",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cupiditate iste nesciunt repellendus unde incidunt error, vitae similique porro officiis voluptatum quae architecto illo laboriosam! Totam repellat quibusdam voluptate assumenda?",
+        title: "Data Visualization Platform",
+        img: "/visudata.jpg",
+        desc: "The goal of this project is to build a web application that allows users to visualize and interact with large datasets in real-time. The application will utilize Django as the backend framework, focusing on providing users with an intuitive and dynamic interface to explore, analyze, and manipulate data visually.",
     },
     {
         id: 3,
-        title: "Django Commerce",
-        img: "https://source.unsplash.com/random/?cars&1",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cupiditate iste nesciunt repellendus unde incidunt error, vitae similique porro officiis voluptatum quae architecto illo laboriosam! Totam repellat quibusdam voluptate assumenda?",
+        title: "My Portfolio",
+        img: "/my-portfolio.jpg",
+        desc: "Built on the robust React.js framework and enhanced with captivating animations powered by the Framer Motion library, this portfolio website redefines the way you present your skills and projects online. With a focus on seamless interactivity and dynamic visuals, our React.js and Framer Motion-based portfolio ensures an engaging and memorable user experience.",
     },
     {
         id: 4,
-        title: "porfolio",
-        img: "https://source.unsplash.com/random/?Cryptocurrency&1",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cupiditate iste nesciunt repellendus unde incidunt error, vitae similique porro officiis voluptatum quae architecto illo laboriosam! Totam repellat quibusdam voluptate assumenda?",
+        title: "CrimiNet",
+        img: "/crimenet.jpg",
+        desc: "CrimeNet is an innovative web-based platform built on Django, dedicated to revolutionizing the crime investigation process. Our platform serves as a centralized hub for storing and managing crime-related data, providing seamless access to case information anytime, anywhere. With CrimeNet, law enforcement agencies and investigators can streamline their workflow, enhance collaboration, and optimize the efficiency of their investigative efforts.",
     },
 ];
 
