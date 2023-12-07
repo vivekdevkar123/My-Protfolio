@@ -68,15 +68,15 @@ export default function Hero() {
                         />
                     </motion.h2>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                        <motion.button variants={textVariants}> <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vivekdevkar123">Let's Connect</a> </motion.button>
+                        <motion.button variants={textVariants} whileHover={{ scale: 1.2 }}>See the Latest Works</motion.button>
+                        <motion.button variants={textVariants} whileHover={{ scale: 1.2 }} > <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vivekdevkar123">Let's Connect</a> </motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
                 </motion.div>
             </div>
 
             <div className="imageContainer">
-                <img src="/hero.png" alt="" />
+                <motion.img src="/hero.png" alt="" whileHover={{ scale: 1.1 }} />
             </div>
 
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >

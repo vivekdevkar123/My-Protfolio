@@ -54,7 +54,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button><a href={item.codelink} target='__blank'>See Code</a></button>
+                        <motion.button whileHover={{ scale: 1.1 }} ><a href={item.codelink} target='__blank'>See Code</a></motion.button>
                     </motion.div>
                 </div>
             </div>
